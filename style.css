@@ -54,7 +54,7 @@ a {
 }
 
 .hero-content {
-  width: min(760px, 90vw);
+  width: min(980px, 90vw);
   margin: auto 0;
   padding: 8vh 6vw 14vh;
 }

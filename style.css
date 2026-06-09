@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f8ecd6;
+  background: #1f1710;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, rgba(19, 12, 7, 0.9), rgba(19, 12, 7, 0.55), rgba(19, 12, 7, 0.18)), url("assets/hero-gnomes.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6vw;
+}
+
+.brand {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.hero-content {
+  width: min(760px, 90vw);
+  margin: auto 0;
+  padding: 8vh 6vw 14vh;
+}
+
+.eyebrow {
+  color: #d7a94e;
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(4rem, 11vw, 9.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.08em;
+  text-shadow: 0 8px 35px rgba(0, 0, 0, 0.65);
+}
+
+.tagline {
+  max-width: 680px;
+  margin: 28px 0 0;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: #fff6e6;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.primary {
+  color: #21150b;
+  background: #e8b957;
+}
+
+.secondary {
+  border: 1px solid rgba(248, 236, 214, 0.75);
+  color: #fff5df;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+main {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.panel {
+  border: 1px solid rgba(232, 185, 87, 0.28);
+  border-radius: 28px;
+  padding: clamp(28px, 5vw, 58px);
+  background: linear-gradient(135deg, rgba(72, 48, 28, 0.75), rgba(40, 28, 19, 0.95));
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.28);
+}
+
+.intro h2, .coming-soon h2 {
+  margin: 0 0 18px;
+  max-width: 900px;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.intro p:last-child, .coming-soon p:last-child {
+  max-width: 780px;
+  font-size: 1.18rem;
+  color: #ead9ba;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin: 28px 0;
+}
+
+.card {
+  padding: 28px;
+  border-radius: 24px;
+  background: #2c2118;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 14px 0 8px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #dbc7a7;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.feature-list span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #2a1b0e;
+  background: #e7c981;
+  font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+footer {
+  padding: 38px 6vw 54px;
+  text-align: center;
+  color: #cbb995;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    align-items: flex-start;
+    gap: 18px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    background-position: 58% center;
+  }
+
+  .hero-content {
+    padding-top: 6vh;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
